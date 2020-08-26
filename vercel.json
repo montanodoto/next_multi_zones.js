@@ -7,11 +7,10 @@
   },
   "builds": [
     { "src": "landings/package.json", "use": "@now/next" },
-    { "src": "tech-seo/package.json", "use": "@now/next" }
+    { "src": "seo/package.json", "use": "@now/next" }
   ],
   "routes": [
     { "src": "/landings/_next(.*)", "dest": "landings/_next$1" },
-    { "src": "/landings(.*)", "dest": "landings/landings$1" },
-    { "src": "(.*)", "dest": "tech-seo$1" }
+    { "src": "(.*)", "dest": "seo$1" }
   ]
 }
