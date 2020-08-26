@@ -6,8 +6,8 @@
     }
   },
   "builds": [
-    { "src": "blog/package.json", "use": "@now/next" },
-    { "src": "home/package.json", "use": "@now/next" }
+    { "src": "landings/package.json", "use": "@now/next" },
+    { "src": "tech-seo/package.json", "use": "@now/next" }
   ],
   "routes": [
     { "src": "/landings/_next(.*)", "dest": "landings/_next$1" },
